@@ -1,6 +1,0 @@
-FERRARI Esportivo WestCar
-NAVIGATOR SUV NorthCar
-GOL Compacto SouthCar
-PALIO Compacto SouthCar
-PORCHE Esportivo WestCar
-CITROEN SUV NorthCar
