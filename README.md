@@ -26,4 +26,4 @@ A compilação pode ser feita via gradle. Para isso basta entrar com o seguinte 
 * O sistema permite que o usuário forneça o caminho do arquivo de **INPUT** nas variáveis de argumento da função main, mas caso isso não seja feito o arquivo padrão está na raiz do projeto e se chama ___Entrada.txt___.
 * O Gradle só foi usado para gerenciar as dependências do projeto, as tasks de execução não funcionam.
 * Em um dos exemplos de entrada foram fornecidas três datas, por isso os dias fornecidos não foram tratados como intervalos e sim como os dias de aluguel de forma individual.
-
+* Todos os arquivos de **dados** se encontram no diretório: ***src/main/resources***

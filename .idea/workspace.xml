@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e00458c8-0550-4855-bdae-b25c30391e99" name="Default Changelist" comment="" />
+    <list default="true" id="e00458c8-0550-4855-bdae-b25c30391e99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +49,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Xx3Noha7Tou24t8kbVrfj865bf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -53,6 +61,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
@@ -71,7 +80,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MainTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ProvaCria.main" />
@@ -180,7 +189,7 @@
       <option name="presentableId" value="Default" />
       <updated>1581973880636</updated>
       <workItem from="1581973885693" duration="6864000" />
-      <workItem from="1582033587108" duration="16984000" />
+      <workItem from="1582033587108" duration="17467000" />
     </task>
     <servers />
   </component>
@@ -196,22 +205,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="473" y="-77" width="378" height="552" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1581975171183" />
-    <state width="1322" height="188" key="GridCell.Tab.0.bottom" timestamp="1582059748007">
+    <state width="1322" height="188" key="GridCell.Tab.0.bottom" timestamp="1582060748416">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1322" height="188" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1582059748007" />
-    <state width="1322" height="188" key="GridCell.Tab.0.center" timestamp="1582059748006">
+    <state width="1322" height="188" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1582060748416" />
+    <state width="1322" height="188" key="GridCell.Tab.0.center" timestamp="1582060748416">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1322" height="188" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1582059748006" />
-    <state width="1322" height="188" key="GridCell.Tab.0.left" timestamp="1582059748005">
+    <state width="1322" height="188" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1582060748416" />
+    <state width="1322" height="188" key="GridCell.Tab.0.left" timestamp="1582060748415">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1322" height="188" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1582059748005" />
-    <state width="1322" height="188" key="GridCell.Tab.0.right" timestamp="1582059748007">
+    <state width="1322" height="188" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1582060748415" />
+    <state width="1322" height="188" key="GridCell.Tab.0.right" timestamp="1582060748416">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1322" height="188" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1582059748006" />
+    <state width="1322" height="188" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1582060748416" />
     <state x="347" y="175" key="com.intellij.ide.util.TipDialog" timestamp="1582033596292">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
