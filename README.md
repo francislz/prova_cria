@@ -10,7 +10,11 @@ Bibliotecas usadas:
 
 #### Como executar o projeto
 
-O projeto pode ser executado pela propria IDE
+O projeto pode ser executado pela propria IDE ou pelo gradle no terminal. Para isso basta entrar na pasta do projeto e digitar o seguinte comando:
+
+```shell script
+./gradlew run --args='CAMINHO/ARQUIVO/TESTE.TXT' # --args é opcional
+```
 
 > **OBS:** em caso de algum erro de dependência importe as dependências do gradle na IDE.
 
