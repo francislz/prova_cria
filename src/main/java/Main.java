@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args) {
         Main main = new Main();
 
-        if(args.length > 0 && args[1] != null){
-            main.lerArquivoEntrada(args[1]);
+        if(args.length > 0 && args[0] != null){
+            main.lerArquivoEntrada(args[0]);
         }
         else{
             main.lerArquivoEntrada("Entrada.txt");
