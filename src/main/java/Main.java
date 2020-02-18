@@ -52,6 +52,8 @@ public class Main {
         String key = "";
         String[] datas = arr[2].split(",");
 
+
+        //De acordo com os dados recebidos, cria um key de busca para encontrar o preço na tabela
         if(arr[2].contains("sab") || arr[2].contains("dom")){
             key += "FimDeSemana";
         }
@@ -70,16 +72,19 @@ public class Main {
         Locadora locadoraBarata = null;
         Carro carroResultado = null;
 
+        //Para cada categoria que é uma possivel solução verifica qual a melhor
         for (Categoria c: combCategoria) {
+            // Verifica se a locadora combina com a categoria em questão
             for(Locadora l: locadoras){
                 if(l.getCategoria() == c){
+                    //Se nenhuma locadora foi selecionada, então é a primeira busca e seleciona a locadora
                     if(locadoraBarata == null){
                         locadoraBarata = l;
                     }
+                    //Se existem carros nessa locadora então busca o primeiro disponivel
                     if(l.getCarros().size() > 0){
                         for(Carro carro: l.getCarros()){
-
-                            //System.out.println(carro.getDescricao() + " => " + carro.getCategoria().getLimiteDePessoas());
+                            //Se nenhum dia requisitado for igual aos ja existentes entao o aluguel pode ser realizado
                             boolean carroValido = true;
                             if(carro.getDiasAlugados() != null){
                                 for(String diasAlugados: carro.getDiasAlugados()){
@@ -90,12 +95,12 @@ public class Main {
                                     }
                                 }
                             }
+                            //Se o aluguel for valido e limite pessoas for menor que o ja existente atualiza a locadora e o carro selecionado.
                             if(carroValido
                                 &&
                                 (c.getLimiteDePessoas() <= locadoraBarata.getCategoria().getLimiteDePessoas() ||
                                 l.getTabelaDePrecos().get(key) <= locadoraBarata.getTabelaDePrecos().get(key))
                             ){
-                                //System.out.println("CAIU NO IF");
                                 locadoraBarata = l;
                                 carroResultado = carro;
                             }
@@ -109,13 +114,12 @@ public class Main {
             }
         }
         if(carroResultado != null){
-            //System.out.println(carroResultado.getCategoria().getLimiteDePessoas());
-            //System.out.println(locadoraBarata.getCarros().contains(carroResultado));
+            //Adiciona os dias requeridos ao carro para que este esteja indisponivel na proxima consulta
             for(String dia: datas){
                 carroResultado.getDiasAlugados().add(dia);
             }
+            //Retorna uma "tupla" com os objetos encontrados
             return new Object[]{locadoraBarata, carroResultado};
-            //System.out.println(carroResultado.getDescricao() + ": " + locadoraBarata.getNome());
         }
         else{
             System.out.println("Não existe carro disponivel que atenda aos requisitos");
@@ -131,7 +135,6 @@ public class Main {
          */
         for (Categoria c: categorias) {
             if(c.getLimiteDePessoas() >= limPessoas){
-                //System.out.println(c.getLimiteDePessoas());
                 combinacoes.add(c);
             }
         }
@@ -153,7 +156,6 @@ public class Main {
                 Carro c = new Carro();
                 c.setDescricao(arr[0]);
                 c.setCategoria(filterCategoria(arr[1]));
-//                System.out.println(c.getDescricao());
                 /***
                  * Filtra a locadora pela descrição fornecida e associa o carro a essa locadora
                  * em uma relação de muitos para muitos.
@@ -164,6 +166,8 @@ public class Main {
         } catch (IOException ex){
             System.err.println(ex.getMessage());
         }
+        // Fecha o arquivo e o buffer após a execução das operações
+
         finally {
             if(br != null){
                 try{
@@ -191,6 +195,9 @@ public class Main {
                 String data = br.readLine();
                 String[] arr = data.split(" ");
                 Locadora l = new Locadora(arr[0], filterCategoria(arr[1]));
+                /***
+                 * A tabela de preços é um Hash que usa uma string e um valor como key e value respectivamente.
+                 */
                 l.addPreco("DiaSemanaRegular", Float.parseFloat(arr[2]));
                 l.addPreco("DiaSemanaPremium", Float.parseFloat(arr[3]));
                 l.addPreco("FimDeSemanaRegular", Float.parseFloat(arr[4]));
@@ -200,6 +207,7 @@ public class Main {
         } catch (IOException ex){
             System.err.println(ex.getMessage());
         }
+        // Fecha o arquivo e o buffer após a execução das operações
         finally {
             if(br != null){
                 try{
@@ -223,6 +231,11 @@ public class Main {
         return locadora;
     }
 
+    /***
+     * Filtra a cetegoria com base na string de descrição recebida via argumento
+     * @param s
+     * @return Categoria
+     */
     public Categoria filterCategoria(String s) {
         Categoria categoria = null;
         for (Categoria c: categorias) {
@@ -233,27 +246,54 @@ public class Main {
         return categoria;
     }
 
+    /***
+     * Lê as categorias com base no arquivo de dados
+     */
     public void readCategorias(){
         categorias = new ArrayList<Categoria>();
-        try{
-            FileReader fileReader = new FileReader(this.getFileFromResources("Categorias.txt"));
-            BufferedReader br = new BufferedReader(fileReader);
+        FileReader fileReader = null;
+        BufferedReader br = null;
 
+        try{
+            //Cria o buffer de leitura do arquivo
+            fileReader = new FileReader(this.getFileFromResources("Categorias.txt"));
+            br = new BufferedReader(fileReader);
+
+            //Enquanto nao chegar ao fim do arquivo processa as informações
             while(br.ready()){
                 String data = br.readLine();
+                //Divide os dados da linha
                 String[] arr = data.split(" ");
+                //Cria nova categoria e adiciona na lista
                 Categoria c = new Categoria(arr[0], Integer.parseInt(arr[1]));
                 categorias.add(c);
             }
         } catch (IOException ex){
             System.err.println(ex.getMessage());
         }
+        // Fecha o arquivo e o buffer após a execução das operações
+        finally {
+            if(br != null){
+                try{
+                    br.close();
+                    fileReader.close();
+                }
+                catch (IOException ex){
+                    System.err.println(ex.getMessage());
+                }
+            }
+        }
     }
 
+    /***
+     * Acessa a pasta de recursos no projeto e lê um arquivo que está na pasta
+     * @param fileName
+     * @return
+     */
     private File getFileFromResources(String fileName) {
 
         ClassLoader classLoader = getClass().getClassLoader();
-
+        //Verifica se o arquivo é valido antes de retornar a instancia criada
         URL resource = classLoader.getResource(fileName);
         if (resource == null) {
             throw new IllegalArgumentException("file is not found!");
@@ -271,6 +311,10 @@ public class Main {
         return categorias.size();
     }
 
+    /***
+     * Conta a quantidade de carros lida e retorna para o test unitario
+     * @return
+     */
     public int getCarrosSize(){
         int size = 0;
         for (Locadora l: locadoras) {
