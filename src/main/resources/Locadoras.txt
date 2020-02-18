@@ -1,0 +1,4 @@
+# Company Categoria DS_R DS_P FDS_R FDS_P
+SouthCar Compacto 210.00 150.00 200.00 90.00
+WestCar Esportivo 530.00 150.00 200.00 90.00
+NorthCar SUV 630.00 580.00 600.00 590.00

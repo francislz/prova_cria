@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e00458c8-0550-4855-bdae-b25c30391e99" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ProvaCria" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ProvaCria" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Arquillian JUnit Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Xx3Noha7Tou24t8kbVrfj865bf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.MainTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ProvaCria.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;MainTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MainTest.readLocadoras" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;MainTest.readLocadoras&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MainTest.resolveInstancia" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;MainTest.resolveInstancia&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MainTest.testFilterLocadora" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;MainTest.testFilterLocadora&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.MainTest" />
+        <item itemvalue="Gradle.MainTest.resolveInstancia" />
+        <item itemvalue="Gradle.MainTest.readLocadoras" />
+        <item itemvalue="Gradle.MainTest.testFilterLocadora" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e00458c8-0550-4855-bdae-b25c30391e99" name="Default Changelist" comment="" />
+      <created>1581973880636</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581973880636</updated>
+      <workItem from="1581973885693" duration="6864000" />
+      <workItem from="1582033587108" duration="16984000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="276" y="9" width="834" height="667" key="#Project_Structure" timestamp="1581974850898">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="276" y="9" width="834" height="667" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1581974850898" />
+    <state x="473" y="-77" width="378" height="552" key="#com.intellij.ide.util.MemberChooser" timestamp="1581975171183">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="473" y="-77" width="378" height="552" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1581975171183" />
+    <state width="1322" height="188" key="GridCell.Tab.0.bottom" timestamp="1582059748007">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="188" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1582059748007" />
+    <state width="1322" height="188" key="GridCell.Tab.0.center" timestamp="1582059748006">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="188" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1582059748006" />
+    <state width="1322" height="188" key="GridCell.Tab.0.left" timestamp="1582059748005">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="188" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1582059748005" />
+    <state width="1322" height="188" key="GridCell.Tab.0.right" timestamp="1582059748007">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="188" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1582059748006" />
+    <state x="347" y="175" key="com.intellij.ide.util.TipDialog" timestamp="1582033596292">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="347" y="175" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1582033596292" />
+    <state x="445" y="-4" width="453" height="585" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1582052683297">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="445" y="-4" width="453" height="585" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.768@0.0.1366.768" timestamp="1582052683297" />
+    <state x="396" y="102" width="564" height="481" key="extract.method.dialog" timestamp="1581980372691">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="396" y="102" width="564" height="481" key="extract.method.dialog/0.0.1366.768@0.0.1366.768" timestamp="1581980372691" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1582057414800">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1582057414800" />
+  </component>
+</project>

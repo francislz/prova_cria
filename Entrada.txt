@@ -1,0 +1,3 @@
+Normal: 1: 16Mar2009 (seg), 17Mar2009 (ter), 18Mar2009 (qua)
+Normal: 3: 20Mar2009 (seg)
+Premium: 6: 01Set2009 (sab), 02Set2009 (dom)
